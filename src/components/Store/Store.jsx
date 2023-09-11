@@ -1,5 +1,6 @@
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Button from "../Button";
+import logo from "../../assets/navbar.png";
 
 function Store() {
   return (
@@ -12,7 +13,7 @@ function Store() {
           <div className="gap-7 h-full mb-5 grayscale hover:grayscale-0">
             <div className="relative w-80 h-80">
               <div className="ease-in duration-[0.4s] p-6 ">
-                <img src="../src/assets/navbar.png" alt="" />
+                <img src={logo} alt="" />
                 <div className="flex flex-col">
                   <p className="text-xl font-bold text-center">Wahid Hasyim</p>
                   <div className="flex items-center gap-2 justify-center">
@@ -36,7 +37,7 @@ function Store() {
           <div className="gap-7 h-full grayscale hover:grayscale-0">
             <div className="relative w-80 h-80">
               <div className="ease-in duration-[0.4s] p-6 ">
-                <img src="../src/assets/navbar.png" alt="" />
+                <img src={logo} alt="" />
                 <div className="flex flex-col">
                   <p className="text-xl font-bold text-center">Monjali</p>
                   <div className="flex items-center gap-2 justify-center">
