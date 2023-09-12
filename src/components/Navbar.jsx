@@ -1,15 +1,41 @@
 import logo from "../assets/navbar.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoArrowUp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', toggleVisibility);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <div className="flex justify-between mx-8 my-5">
       <Link to="/" className="flex items-center gap-2">
@@ -41,6 +67,16 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
+
+
+      <button
+        onClick={scrollToTop}
+        className={`fixed justify-center items-center cursor-pointer bottom-4 right-4 z-[9999] h-12 w-12 rounded-full bg-black p-4  ${
+          isVisible ? "flex" : "hidden"
+        }`}
+      >
+        <IoArrowUp size="32px" color="white" />
+      </button>
     </div>
   );
 }

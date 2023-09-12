@@ -40,11 +40,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="absolute opacity-20 top-20 md:top-0 md:opacity-100 md:w-1/2 md:relative">
+          <div className="hidden md:top-0 md:w-1/2 md:flex">
             <img
               src={logo}
               alt=""
-              className="sm:filter grayscale md:filter-none"
+              className=""
             />
           </div>
         </div>
