@@ -7,7 +7,7 @@ function Store() {
     <section className="w-full">
       <div className="pt-12 md:pt-10 mx-10 pb-16">
         <div>
-          <h3 className="text-2xl font-bold">Our Store:</h3>
+          <h3 className="text-3xl font-bold">Our Store</h3>
         </div>
         <div className="flex flex-col md:flex-row justify-around items-center ">
           <div className="gap-7 h-full mb-5 grayscale hover:grayscale-0">

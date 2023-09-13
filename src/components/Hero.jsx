@@ -8,7 +8,7 @@ export default function Home() {
       <div className="pt-20 md:pt-0 mx-8">
         <div className="flex flex-wrap">
           <div className="w-full self-center text-center relative md:w-1/2">
-            <h1 className="text-4xl">Rujakgaram Jogja</h1>
+            <h1 className="text-4xl font-bold">Rujakgaram Jogja</h1>
             <p className="text-sm">Bikin Meler, Bikin Melek</p>
             <div className="pt-5">
             <p className="text-xl font-bold uppercase">Business Hours</p>
