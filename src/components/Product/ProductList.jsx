@@ -21,7 +21,7 @@ function ProductList() {
                 navigation
                 autoplay={{ delay: 2000, pauseOnMouseEnter: true}}
                 pagination={{ clickable: true }}
-                scrollbar={{ draggable: true }}
+                scrollbar={{ draggable: true, hide: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
                 breakpoints={{

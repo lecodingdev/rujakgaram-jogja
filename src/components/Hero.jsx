@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/navbar.png";
-import { FaWhatsapp, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+
 
 export default function Home() {
   return (
-    <main className="w-full mb-14">
-      <div className="pt-28 md:pt-5 mx-8">
+    <main className="w-full">
+      <div className="pt-20 md:pt-0 mx-8">
         <div className="flex flex-wrap">
-          <div className="w-full self-center text-center relative md:w-1/2 z-10">
+          <div className="w-full self-center text-center relative md:w-1/2">
             <h1 className="text-4xl">Rujakgaram Jogja</h1>
             <p className="text-sm">Bikin Meler, Bikin Melek</p>
             <div className="pt-5">
@@ -14,29 +15,10 @@ export default function Home() {
             <p>Open Daily</p>
             <p>11.00 - 21.00 </p>
             </div>
-            <div className="flex mt-5 justify-center">
+            <div className="flex pt-10 justify-center">
               <div className="flex text-center items-center gap-4 cursor-pointer">
-                <a
-                  href="https://instagram.com/rujakgaram_jogja"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaInstagram size="28px" color="red" />
-                </a>
-                <a
-                  href="https://wa.me/6287711931345"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaWhatsapp size="28px" color="green" />
-                </a>
-                <a
-                  href="https://goo.gl/maps/H4mQdX6CfFTqFA3m9"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FaMapMarkerAlt size="28px" color="red" className="animate-bounce" />
-                </a>
+                <Link to="/store" className="relative border-2 border-gray-800 bg-transparent py-2.5 px-5 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100">Store</Link>
+                <Link to="/menu" className="relative border-2 border-gray-800 bg-transparent py-2.5 px-5 font-medium uppercase text-gray-800 transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-y-0 before:bg-gray-800 before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-y-100">Menu</Link>
               </div>
             </div>
           </div>
