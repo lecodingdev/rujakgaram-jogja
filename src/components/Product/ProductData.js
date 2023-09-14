@@ -5,7 +5,7 @@ import RujakBig from "../../assets/rujak-big.jpeg"
 import RujakBig2 from "../../assets/rujak-big2.png"
 import RujakShake from "../../assets/rujak-shake.png"
 import RujakSmall from "../../assets/rujak-small.png"
-import RujakTampah from "../../assets/rujak-tampah.png"
+import RujakTampah from "../../assets/rujak-tampah.jpeg"
 
 export const items = [
     {
@@ -23,7 +23,7 @@ export const items = [
     {
         id: 3,
         img: Buah,
-        description: "Buah-Buah Rujak",
+        description: "Slice of Fruits",
         price: 25000,
     },
     {
