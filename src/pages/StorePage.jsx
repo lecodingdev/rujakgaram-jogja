@@ -1,3 +1,4 @@
+import OtherOption from "../components/Store/OtherOption";
 import StoreCard from "../components/Store/StoreCard";
 
 function StorePage() {
@@ -9,6 +10,9 @@ function StorePage() {
         </div>
         <div className="flex flex-col md:flex-row md:gap-5 mt-0">
           <StoreCard />
+        </div>
+        <div>
+          <OtherOption />
         </div>
       </div>
     </div>
